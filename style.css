@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  background: #f8f0d8;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 800px;
+  min-height: 400px;
+}
+
+.image-container {
+  background: #8a0000;
+  width: 50%;
+  position: relative;
+  padding: 20px;
+}
+
+.apple-image {
+  width: 100%;
+  max-width: 250px;
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  z-index: 2;
+}
+.apple-image {
+  width: 100%;
+  max-width: 250px;
+  position: absolute;
+  top: 50%;               /* Center vertically */
+  left: -30px;            /* Thoda left se bahar */
+  transform: translateY(-50%);  /* Proper vertical centering */
+  z-index: 2;
+}
+
+
+.thumbnail-row {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.thumbnail-row img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.info-container {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.code {
+  margin: 5px 0;
+  color: #555;
+}
+
+.price {
+  font-size: 28px;
+  color: #b30000;
+  margin: 10px 0;
+}
+
+.label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.colors span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.red { background: red; }
+.green { background: green; }
+.yellow { background: gold; }
+
+.benefits {
+  margin: 20px 0;
+}
+
+.benefits ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.cart-button {
+  background: #b30000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;
+}
